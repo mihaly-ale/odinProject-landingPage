@@ -1,0 +1,67 @@
+/* variables */
+:root {
+	--clr-brand-primary: #128688;
+	--clr-brand-secondary: #f8cf07;
+	--clr-bg-primary: #0f6161;
+	--clr-font-primary: #fdfdfd;
+	--clr-dark: #000;
+
+	--margin-100: 1rem;
+	--margin-200: 2rem;
+	--margin-300: 3rem;
+
+	--padding-100: 1em;
+	--padding-200: 2em;
+	--padding-300: 3em;
+
+	--radius: 0.25rem;
+
+  --fs-content-large: 1.25rem
+  --fs-content-medium: 1.125rem
+  --fs-content-small: .875rem
+
+  --fw-normal: 500;
+  --fw-bold: 700;
+  --fw-light: 300;
+
+}
+
+/* general styles */
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-content-medium);
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+section,
+footer {
+	max-width: 1200px;
+}
+
+button {
+  appearance: none;
+}
+
+ul {
+  margin:0;
+  padding:0
+}
