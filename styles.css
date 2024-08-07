@@ -90,7 +90,8 @@ button {
 }
 
 section {
-	padding-block: var(--padding-300);
+	padding: var(--padding-300) var(--padding-100);
+	margin-inline: auto;
 }
 
 /* header - navigation*/
@@ -170,6 +171,10 @@ h1 {
 /* projects section */
 .section-light-bg {
 	background-color: var(--clr-font-primary);
+}
+
+section.projects h2 {
+	color: var(--clr-dark);
 }
 
 .cards {
