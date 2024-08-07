@@ -79,21 +79,14 @@ li {
 }
 
 button {
-	background-color: var(--clr-brand-secondary);
-	color: var(--clr-bg-primary);
+	display: block;
 	padding: 0.75em 1.75em;
 	font-weight: var(--fw-bold);
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-size: var(--fs-content-medium);
 	border-radius: var(--radius);
-	border-color: var(--clr-bg-primary);
 	transition: ease-in-out 250ms;
-}
-
-button:hover {
-	color: var(--clr-font-primary);
-	border-color: var(--clr-font-primary);
 }
 
 section {
@@ -163,6 +156,17 @@ h1 {
 	margin-bottom: var(--margin-300);
 }
 
+.button-cta {
+	color: var(--clr-bg-primary);
+	border-color: var(--clr-bg-primary);
+	background-color: var(--clr-brand-secondary);
+}
+
+.button-cta:hover {
+	color: var(--clr-font-primary);
+	border-color: var(--clr-font-primary);
+}
+
 /* projects section */
 .section-light-bg {
 	background-color: var(--clr-font-primary);
@@ -173,6 +177,7 @@ h1 {
 	flex-wrap: wrap;
 	gap: var(--gap);
 	padding: var(--padding-100);
+	margin-bottom: var(--margin-300);
 }
 
 .card {
@@ -186,4 +191,17 @@ h1 {
 	flex-direction: column;
 	justify-content: space-between;
 	gap: var(--gap);
+}
+
+.button-section {
+	color: var(--clr-dark);
+	border-color: var(--clr-dark);
+	background-color: var(--clr-font-primary);
+	margin-left: auto;
+}
+
+.button-section:hover {
+	color: var(--clr-font-primary);
+	border-color: var(--clr-dark);
+	background-color: var(--clr-dark);
 }
