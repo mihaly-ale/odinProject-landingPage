@@ -18,6 +18,7 @@
 	--padding-300: 3em;
 
 	--gap: 2rem;
+	--gap-double: 4rem;
 
 	--radius: 0.25rem;
 
@@ -60,6 +61,10 @@ img {
 
 a {
 	text-decoration: none;
+}
+
+a:not(.nav-link) {
+	color: inherit;
 }
 
 section,
@@ -287,14 +292,20 @@ footer {
 	display: flex;
 	flex-direction: column;
 	padding: var(--padding-100);
+	color: var(--clr-font-primary);
+	font-size: var(--fs-content-small);
 }
 
 .footer-top {
 	display: flex;
 	justify-content: space-between;
+	gap: var(--gap-double);
 	margin-bottom: var(--margin-300);
+}
 
-	outline: 2px solid red;
+.footer-logo {
+	object-fit: contain;
+	flex-basis: 100px;
 }
 
 .contact-options {
@@ -303,16 +314,22 @@ footer {
 
 address {
 	display: flex;
+	gap: 1rem;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
+	font-style: normal;
 
-	margin-bottom: var(--margin-200);
+	margin-bottom: var(--margin-100);
 }
 
 .social-links {
 	display: flex;
 	gap: var(--gap);
-	justify-content: center;
+	justify-content: flex-start;
+}
+
+.social-links img {
+	width: 25px;
 }
 
 .footer-bottom {
