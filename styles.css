@@ -210,3 +210,42 @@ section.projects h2 {
 	border-color: var(--clr-dark);
 	background-color: var(--clr-dark);
 }
+
+/* services */
+.section-dark-bg {
+	background-color: var(--clr-bg-primary);
+}
+
+.service-cards {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+	padding: var(--padding-100);
+	margin-bottom: var(--margin-300);
+}
+
+.service-card {
+	max-width: 350px;
+	padding: var(--padding-200);
+	border-radius: var(--radius);
+	border: 1px solid white;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.service-one {
+	background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.3)),
+		url(media/images/printer-with-sd-cards.jpg);
+}
+
+.service-two {
+	background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
+		url(media/images/3d-printer.jpg);
+}
+
+.service-three {
+	background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
+		url(media/images/3d-artefacts.jpg);
+}
