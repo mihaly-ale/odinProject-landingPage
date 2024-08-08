@@ -173,15 +173,14 @@ h1 {
 	margin-bottom: var(--margin-300);
 }
 
-.button-cta {
+.button-cta-primary {
 	color: var(--clr-bg-primary);
 	border-color: var(--clr-bg-primary);
-	background-color: var(--clr-brand-secondary);
+	background-color: var(--clr-font-primary);
 }
 
-.button-cta:hover {
-	color: var(--clr-font-primary);
-	border-color: var(--clr-font-primary);
+.button-cta-primary:hover {
+	background-color: var(--clr-brand-secondary);
 }
 
 /* projects section */
@@ -282,6 +281,16 @@ ul:has(.order-list-item) {
 .order-list-item::before {
 	content: '📌';
 	margin-right: var(--margin-50);
+}
+
+.button-cta-secondary {
+	color: var(--clr-dark);
+	border-color: var(--clr-bg-primary);
+	background-color: var(--clr-brand-secondary);
+}
+
+.button-cta-secondary:hover {
+	color: var(--clr-font-primary);
 }
 
 /* footer */
