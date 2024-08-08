@@ -116,7 +116,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: var(--clr-bg-primary);
+	background: var(--clr-dark);
 	padding: var(--padding-100);
 }
 
