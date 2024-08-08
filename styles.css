@@ -95,7 +95,8 @@ button {
 	transition: ease-in-out 250ms;
 }
 
-section {
+section,
+footer {
 	padding: var(--padding-300) var(--padding-100);
 	margin-inline: auto;
 }
@@ -283,6 +284,11 @@ ul:has(.order-list-item) {
 	margin-right: var(--margin-50);
 }
 
+p:has(a[href='#faq']) {
+	margin-block: var(--margin-200);
+	font-size: var(--fs-content-small);
+}
+
 .button-cta-secondary {
 	color: var(--clr-dark);
 	border-color: var(--clr-bg-primary);
@@ -295,10 +301,10 @@ ul:has(.order-list-item) {
 
 /* footer */
 footer {
+	margin-top: var(--padding-700);
 	background-color: var(--clr-dark);
 	display: flex;
 	flex-direction: column;
-	padding: var(--padding-100);
 	color: var(--clr-font-primary);
 	font-size: var(--fs-content-small);
 }
