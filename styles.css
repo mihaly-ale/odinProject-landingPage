@@ -17,8 +17,9 @@
 	--padding-200: 2em;
 	--padding-300: 3em;
 
-	--gap: 2rem;
-	--gap-double: 4rem;
+	--gap-100: 1rem;
+	--gap-200: 2rem;
+	--gap-400: 4rem;
 
 	--radius: 0.25rem;
 
@@ -59,11 +60,9 @@ img {
 	display: block;
 }
 
-a {
+a.nav-link,
+footer a {
 	text-decoration: none;
-}
-
-a:not(.nav-link) {
 	color: inherit;
 }
 
@@ -123,11 +122,10 @@ section {
 
 .nav-list {
 	display: flex;
-	gap: var(--gap);
+	gap: var(--gap-200);
 }
 
 .nav-link {
-	color: var(--clr-font-primary);
 	font-weight: var(--fw-bold);
 	font-size: var(--fs-title-small);
 	padding: 0.5em;
@@ -198,7 +196,7 @@ section.projects h2 {
 .project-cards {
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--gap);
+	gap: var(--gap-200);
 	padding: var(--padding-100);
 	margin-bottom: var(--margin-300);
 }
@@ -213,7 +211,7 @@ section.projects h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: var(--gap);
+	gap: var(--gap-200);
 }
 
 .button-section {
@@ -237,7 +235,7 @@ section.projects h2 {
 .service-cards {
 	display: flex;
 	flex-direction: column;
-	gap: var(--gap);
+	gap: var(--gap-200);
 	padding: var(--padding-100);
 	margin-bottom: var(--margin-300);
 }
@@ -299,7 +297,7 @@ footer {
 .footer-top {
 	display: flex;
 	justify-content: space-between;
-	gap: var(--gap-double);
+	gap: var(--gap-400);
 	margin-bottom: var(--margin-300);
 }
 
@@ -314,7 +312,7 @@ footer {
 
 address {
 	display: flex;
-	gap: 1rem;
+	gap: var(--gap-100);
 	flex-direction: column;
 	align-items: flex-start;
 	font-style: normal;
@@ -324,7 +322,7 @@ address {
 
 .social-links {
 	display: flex;
-	gap: var(--gap);
+	gap: var(--gap-200);
 	justify-content: flex-start;
 }
 
@@ -335,5 +333,5 @@ address {
 .footer-bottom {
 	display: flex;
 	justify-content: center;
-	gap: var(--gap);
+	gap: var(--gap-200);
 }
