@@ -71,10 +71,6 @@ footer {
 	max-width: 1200px;
 }
 
-button {
-	appearance: none;
-}
-
 ul {
 	margin: 0;
 	padding: 0;
@@ -84,15 +80,18 @@ li {
 	list-style-type: none;
 }
 
-button {
+.button {
 	display: block;
-	padding: 0.75em 1.75em;
+	width: fit-content;
+	padding: 0.5em 1.15em;
 	font-weight: var(--fw-bold);
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-size: var(--fs-content-medium);
-	border-radius: var(--radius);
+	border-radius: 2px;
 	transition: ease-in-out 250ms;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 section,
@@ -216,7 +215,7 @@ section.projects h2 {
 
 .button-section {
 	color: var(--clr-dark);
-	border-color: var(--clr-dark);
+	border: 2px solid var(--clr-dark);
 	background-color: var(--clr-font-primary);
 	margin-left: auto;
 }
@@ -291,7 +290,7 @@ p:has(a[href='#faq']) {
 
 .button-cta-secondary {
 	color: var(--clr-dark);
-	border-color: var(--clr-bg-primary);
+	border: 2px solid var(--clr-bg-primary);
 	background-color: var(--clr-brand-secondary);
 }
 
