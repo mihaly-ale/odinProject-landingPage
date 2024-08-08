@@ -96,6 +96,17 @@ section {
 	margin-inline: auto;
 }
 
+.sr-only {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
 /* header - navigation*/
 .navigation {
 	display: flex;
@@ -268,4 +279,44 @@ ul:has(.order-list-item) {
 .order-list-item::before {
 	content: '📌';
 	margin-right: var(--margin-50);
+}
+
+/* footer */
+footer {
+	background-color: var(--clr-dark);
+	display: flex;
+	flex-direction: column;
+	padding: var(--padding-100);
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: var(--margin-300);
+
+	outline: 2px solid red;
+}
+
+.contact-options {
+	flex: 1;
+}
+
+address {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: var(--margin-200);
+}
+
+.social-links {
+	display: flex;
+	gap: var(--gap);
+	justify-content: center;
+}
+
+.footer-bottom {
+	display: flex;
+	justify-content: center;
+	gap: var(--gap);
 }
