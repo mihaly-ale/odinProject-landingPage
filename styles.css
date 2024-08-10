@@ -66,11 +66,6 @@ footer a {
 	color: inherit;
 }
 
-section,
-footer {
-	max-width: 1200px;
-}
-
 ul {
 	margin: 0;
 	padding: 0;
@@ -109,6 +104,23 @@ footer {
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
+}
+
+.light-bg {
+	background-color: var(--clr-font-primary);
+}
+
+.green-bg {
+	background-color: var(--clr-bg-primary);
+}
+
+.dark-bg {
+	background-color: var(--clr-dark);
+}
+
+.width-container {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 /* header - navigation*/
@@ -184,10 +196,6 @@ h1 {
 }
 
 /* projects section */
-.section-light-bg {
-	background-color: var(--clr-font-primary);
-}
-
 section.projects h2 {
 	color: var(--clr-dark);
 }
@@ -227,10 +235,6 @@ section.projects h2 {
 }
 
 /* services */
-.section-dark-bg {
-	background-color: var(--clr-bg-primary);
-}
-
 .service-cards {
 	display: flex;
 	flex-direction: column;
@@ -299,9 +303,8 @@ p:has(a[href='#faq']) {
 }
 
 /* footer */
-footer {
-	margin-top: var(--padding-700);
-	background-color: var(--clr-dark);
+footer .width-container {
+	padding-top: var(--padding-300);
 	display: flex;
 	flex-direction: column;
 	color: var(--clr-font-primary);
