@@ -291,6 +291,31 @@ section.projects h2 {
 	color: var(--clr-dark);
 }
 
+.contact .width-container {
+	display: flex;
+	flex-direction: column;
+}
+p:has(a[href='#faq']) {
+	margin-block: var(--margin-200);
+	font-size: var(--fs-content-small);
+}
+
+@media screen and (width>=626px) {
+	.contact .width-container {
+		flex-direction: row;
+		gap: var(--gap-400);
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.contact .width-container div:nth-child(2) {
+		align-self: flex-end;
+	}
+	p:has(a[href='#faq']) {
+		margin-block: 0;
+	}
+}
+
 ul:has(.order-list-item) {
 	margin-left: var(--margin-50);
 }
@@ -302,11 +327,6 @@ ul:has(.order-list-item) {
 .order-list-item::before {
 	content: '📌';
 	margin-right: var(--margin-50);
-}
-
-p:has(a[href='#faq']) {
-	margin-block: var(--margin-200);
-	font-size: var(--fs-content-small);
 }
 
 .button-cta-secondary {
