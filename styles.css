@@ -237,12 +237,13 @@ section.projects h2 {
 /* services */
 .service-cards {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: var(--gap-200);
 	padding: var(--padding-100);
 	margin-bottom: var(--margin-300);
 }
-
 .service-card {
 	max-width: 350px;
 	padding: var(--padding-200);
@@ -254,8 +255,24 @@ section.projects h2 {
 	background-size: cover;
 }
 
+@media screen and (width>=1186px) {
+	.service-cards {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 0px;
+	}
+
+	.service-card.service-two {
+		margin-inline: var(--margin-100);
+		z-index: 2;
+		scale: 1.1;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+	}
+}
+
 .service-one {
-	background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.3)),
+	background-image: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
 		url(media/images/printer-with-sd-cards.jpg);
 }
 
