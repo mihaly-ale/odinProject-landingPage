@@ -360,7 +360,7 @@ footer .width-container {
 	flex-basis: 100px;
 }
 
-.contact-options {
+.footer-top-right {
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--gap-100);
