@@ -132,6 +132,7 @@ footer {
 	align-items: center;
 	background: var(--clr-dark);
 	padding: var(--padding-100);
+	height: 130px;
 }
 
 .menu {
