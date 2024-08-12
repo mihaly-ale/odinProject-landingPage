@@ -200,6 +200,13 @@ footer {
 	.menu .bar::after {
 		top: 10px;
 	}
+	/* hamburger menu end */
+
+	.menu:hover span.bar,
+	.menu:hover span.bar::before,
+	.menu:hover span.bar::after {
+		background-color: #f8cf07;
+	}
 }
 
 .nav-list {
