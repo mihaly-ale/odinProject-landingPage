@@ -134,6 +134,10 @@ footer {
 	padding: var(--padding-100);
 }
 
+.menu {
+	display: none;
+}
+
 @media screen and (width<= 900px) {
 	nav {
 		width: 100%;
@@ -153,6 +157,48 @@ footer {
 
 	.nav-logo {
 		width: 100px;
+	}
+
+	/* hamburger menu start */
+	.menu {
+		display: block;
+		appearance: none;
+		cursor: pointer;
+		border: none;
+		padding: var(--padding-100);
+		background: var(--clr-dark);
+		position: relative;
+		right: 2rem;
+	}
+
+	.menu .bar,
+	.menu .bar::before,
+	.menu .bar::after {
+		width: 32px;
+		height: 4px;
+		background-color: var(--clr-font-primary);
+		border-radius: var(--radius);
+	}
+
+	.menu .bar {
+		display: inline-block;
+		position: relative;
+	}
+
+	.menu .bar::before,
+	.menu .bar::after {
+		content: '';
+
+		position: absolute;
+		left: 0;
+	}
+
+	.menu .bar::before {
+		top: -10px;
+	}
+
+	.menu .bar::after {
+		top: 10px;
 	}
 }
 
