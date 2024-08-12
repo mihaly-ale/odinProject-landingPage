@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'NicoMoji';
+	src: url('media/font/NicoMoji-Regular.ttf') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* variables */
 :root {
 	--clr-brand-primary: #128688;
@@ -268,6 +275,7 @@ header {
 }
 
 h1 {
+	font-family: 'NicoMoji', sans-serif;
 	margin-bottom: 0;
 	font-size: clamp(var(--fs-title-medium), 5vw, var(--fs-title-large));
 }
