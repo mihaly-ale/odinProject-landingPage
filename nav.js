@@ -10,13 +10,9 @@ navMenuBtn.addEventListener("click", () => {
 function slideInNavigation() {
   if (isNavOpen) {
     navbar.classList.add("nav-off-screen")
-    bar.classList.remove("change-menu-bar")
-    bar.textContent = "—"
     isNavOpen = false
   } else {
     navbar.classList.remove("nav-off-screen")
-    bar.classList.add("change-menu-bar")
-    bar.textContent = "✕"
     isNavOpen = true
   }
 }
