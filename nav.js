@@ -4,7 +4,8 @@ const bar = navMenuBtn.children[1]
 let isNavOpen = false
 
 navMenuBtn.addEventListener("click", () => {
-  slideInNavigation(); changeNavMenuBtn()
+  slideInNavigation();
+  changeNavMenuBtn()
 })
 
 function slideInNavigation() {
@@ -24,5 +25,19 @@ function changeNavMenuBtn() {
   } else {
     bar.classList.add("change-menu-bar")
     bar.textContent = "✕"
+  }
+}
+
+window.addEventListener("scroll", () => {
+  closeNavOnScroll();
+
+})
+
+function closeNavOnScroll() {
+  if (isNavOpen) {
+    navbar.classList.add("nav-off-screen")
+    bar.classList.remove("change-menu-bar")
+    bar.textContent = "—"
+    isNavOpen = false
   }
 }
