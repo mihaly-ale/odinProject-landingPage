@@ -16,9 +16,11 @@
 	--padding-100: 1em;
 	--padding-200: 2em;
 	--padding-300: 3em;
+	--padding-600: 6em;
 
 	--gap-100: 1rem;
 	--gap-200: 2rem;
+	--gap-300: 3rem;
 	--gap-400: 4rem;
 
 	--radius: 0.25rem;
@@ -341,30 +343,43 @@ ul:has(.order-list-item) {
 
 /* footer */
 footer .width-container {
-	padding-top: var(--padding-300);
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	gap: var(--gap-300);
+
 	color: var(--clr-font-primary);
 	font-size: var(--fs-content-small);
 }
 
+footer {
+	padding-top: var(--padding-600);
+}
+
 .footer-top {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: flex-end;
 	gap: var(--gap-400);
-	margin-bottom: var(--margin-300);
 }
 
 .footer-logo {
 	object-fit: contain;
-	flex-basis: 100px;
 }
 
 .footer-top-right {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	gap: var(--gap-100);
 	flex: 1;
+}
+
+@media screen and (width>=626px) {
+	.footer-top-right {
+		flex-direction: row;
+		gap: var(--gap-400);
+		align-items: flex-end;
+	}
 }
 
 address {
@@ -379,7 +394,7 @@ address {
 	display: flex;
 	gap: var(--gap-200);
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .social-links img {
