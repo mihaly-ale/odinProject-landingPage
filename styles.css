@@ -147,8 +147,11 @@ footer {
 		background: var(--clr-dark);
 		padding-block: var(--padding-300);
 
-		translate: 100%;
 		transition: ease-in-out 650ms;
+	}
+
+	.nav-off-screen {
+		translate: 100%;
 	}
 
 	.nav-list {
