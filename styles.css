@@ -173,25 +173,29 @@ footer {
 		background: var(--clr-dark);
 		position: relative;
 		right: 2rem;
-	}
-
-	.menu .bar,
-	.menu .bar::before,
-	.menu .bar::after {
-		width: 32px;
-		height: 4px;
-		background-color: var(--clr-font-primary);
-		border-radius: var(--radius);
+		z-index: 10;
+		transition: transform 250ms ease-in-out;
 	}
 
 	.menu .bar {
 		display: inline-block;
 		position: relative;
+		width: 30px;
+		color: var(--clr-font-primary);
+		font-size: var(--fs-title-medium);
 	}
 
 	.menu .bar::before,
 	.menu .bar::after {
-		content: '';
+		width: 30px;
+		display: block;
+		color: var(--clr-font-primary);
+		font-size: var(--fs-title-medium);
+	}
+
+	.menu .bar::before,
+	.menu .bar::after {
+		content: '—';
 
 		position: absolute;
 		left: 0;
@@ -209,7 +213,7 @@ footer {
 	.menu:hover span.bar,
 	.menu:hover span.bar::before,
 	.menu:hover span.bar::after {
-		background-color: #f8cf07;
+		color: var(--clr-brand-secondary);
 	}
 }
 
@@ -484,4 +488,13 @@ address {
 	display: flex;
 	justify-content: center;
 	gap: var(--gap-200);
+}
+
+.change-menu-bar {
+	&::before {
+		content: none !important;
+	}
+	&::after {
+		content: none !important;
+	}
 }
