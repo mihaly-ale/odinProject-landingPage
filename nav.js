@@ -30,7 +30,6 @@ function changeNavMenuBtn() {
 
 window.addEventListener("scroll", () => {
   closeNavOnScroll();
-
 })
 
 function closeNavOnScroll() {
