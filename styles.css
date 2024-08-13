@@ -166,7 +166,7 @@ footer {
 	}
 
 	.nav-off-screen {
-		translate: 100%;
+		translate: -100%;
 	}
 
 	.nav-list {
