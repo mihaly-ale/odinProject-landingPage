@@ -87,9 +87,11 @@ ul {
 li {
 	list-style-type: none;
 }
+
 a:not(.nav-link):visited {
 	color: var(--clr-brand-primary);
 }
+
 .button {
 	display: block;
 	width: fit-content;
@@ -156,7 +158,7 @@ footer {
 	display: none;
 }
 
-@media screen and (width<= 900px) {
+@media screen and (width<=900px) {
 	nav {
 		width: 100%;
 		position: absolute;
@@ -226,6 +228,7 @@ footer {
 	.menu .bar::after {
 		top: 10px;
 	}
+
 	/* hamburger menu end */
 
 	.menu:hover span.bar,
@@ -353,6 +356,7 @@ section.projects h2 {
 	padding: var(--padding-100);
 	margin-bottom: var(--margin-300);
 }
+
 .service-card {
 	max-width: 350px;
 	padding: var(--padding-200);
@@ -404,6 +408,7 @@ section.projects h2 {
 	display: flex;
 	flex-direction: column;
 }
+
 p:has(a[href='#faq']) {
 	margin-block: var(--margin-200);
 	font-size: var(--fs-content-small);
@@ -420,6 +425,7 @@ p:has(a[href='#faq']) {
 	.contact .width-container div:nth-child(2) {
 		align-self: flex-end;
 	}
+
 	p:has(a[href='#faq']) {
 		margin-block: 0;
 	}
@@ -536,10 +542,19 @@ address a {
 	gap: var(--gap-200);
 }
 
+footer a:hover {
+	opacity: 0.65;
+}
+
+footer a:focus-visible {
+	outline-offset: 5px;
+}
+
 .change-menu-bar {
 	&::before {
 		content: none !important;
 	}
+
 	&::after {
 		content: none !important;
 	}
